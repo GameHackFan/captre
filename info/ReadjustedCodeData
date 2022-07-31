@@ -1,0 +1,555 @@
+------------------------------------------------------------------------
+Extra Code
+------------------------------------------------------------------------
+
+Feature Manager
+
+140100: Player Character Select (Mid Game)
+140140: Character Confirmation (Select Screen)
+140170: Character Confirmation (Mid Game)
+140190: Pallete Replace (All Players)
+1401C0: Draw Hack Texts (Select Screen)
+1401E0: Draw Hack Texts and Reset Palletes (Title Screen)
+
+
+Captain Discharge
+
+140300: Force Captain Discharge To Be Fire or Ice.
+
+
+Character Select
+
+140400: Handle Character Select (Current Player)
+140450: Draw Character Image (Select Screen)
+
+
+Color Select
+
+140500: Handle Color Select (Current Player)
+140550: Clean Player Color Flags (All Players)
+
+
+Color Confirmation
+
+140600: Handle Color Confirmation (Current Player)
+140650: Update The Color Conflict Flag (Current Player)
+140680: Color Conflict Fix (Current Player)
+
+
+Pallete Replace
+
+140700: Replace Pallete
+140760: Replace Pallete (Current Player)
+1407A0: Replace Pallete (All Players)
+
+
+Player Effect Fix
+
+140900: Replica Effect Fix (Current Player)
+140930: Cut In Half Effect Fix (Current Player)
+
+
+Ice Fix
+
+140A00: Dolg Hit By Ice Action Fix (Ground)
+140A40: Enemies Hit By Ice Action Fix (Ground)
+140A80: Enemies Hit By Ice Action Fix (Mid Air)
+140AC0: Doppel Hit By Ice Action Fix (Ground)
+140B20: Doppel Hit By Ice Action Fix (Ground, Mid Air)
+140B20: Enemies Hit By Ice Action Pallete Fix (Default Sprite)
+140B50: Enemies Hit By Ice Action Pallete Fix (Ice Sprite)
+140B70: Enemies Hit By Ice Action Fix (Death)
+140B90: Enemy Death By Ice Fix
+
+
+Extra Text
+
+140C00: Prints Sprites in Line
+140C30: Saves Values in Memory
+140C60: Restore Values Saved in Memory
+140C90: Print Hack Name and Link Text (Title Screen)
+140CD0: Print Hack Name and Link Text (Select Screen)
+140D10: Print Starting Soon Text (Select Screen)
+140D40: Hack Name Text
+140D70: Hack Link Text
+140DA0: Starting Soon Text
+
+
+Continue Screen Fix
+
+140E00: Continue Screen Fix (All Players)
+140E80: Start Continue Screen After Some Time (No Active Players)
+140EB0: Custom Continue Screen Timer Increase
+
+Coin Score Fix
+
+140F00: Coin Score Fix (Current Player)
+
+
+Idle Screen Fix
+
+141000: Color Flag Fix (Ending Screen)
+141040: Color Flag Fix (Idle Screen)
+
+Pallete Mapper
+
+141100: Remap Sprite Pallete ID
+141150: Draw Sprite Fix 1
+141180: Draw Sprite Fix 2
+1411B0: Draw Sprite Fix 3
+141200: Remap Sprite Pallete ID 1
+141220: Remap Sprite Pallete ID 2
+141240: Remap Sprite Pallete ID 3
+141280: Remap Sprite Pallete ID 4
+
+
+Boss Improvement 
+
+141300: Doppel Replica Flag Decrease (Current Replica)
+141320: Set Custom Boss Amount Value (Current Stage)
+141360: Boss Set Force End Stage Flag  (Current Enemy)
+
+
+Configuration Loader
+
+141400: Try to Load Custom Settings
+
+
+Menu Builder 
+
+142000: Manage Menu
+142040: Start Menu
+142070: Draw Menu Title
+1420A0: Draw Menu Hints
+142100: Draw Selected Menu Item Label
+142140: Draw Selected Menu Item Value
+142180: Clean Screen
+1421B0: Change Selected Menu Item Feature
+1421D0: Change Menu Item Value Feature
+142200: Handle Change Selected Menu Item
+142260: Handle Change Menu Item Value
+1422C0: Handle Exit Menu
+1422F0: Draw Text
+142320: Save Register Values
+142360: Restore Register Values
+1423A0: Menu Builder Hint 1 Text
+1423D0: Menu Builder Hint 2 Text
+142400: Menu Builder Hint 3 Text
+142430: Menu Builder Empty Text
+
+
+Configuration Menu
+
+142500: Configuration Menu Builder
+142550: Draw Test Menu Configuration Menu Hint
+142590: Test Menu Configuration Menu Hint Text
+1425C0: Configuration Menu Data (Title)
+1425E0: Configuration Menu Data (Item Amount)
+1425F0: Configuration Menu Data (Items Offset)
+142610: Difficulty 1 Menu Data (System Data)
+142620: Difficulty 1 Menu Data (Label)
+142630: Difficulty 1 Value 1 Data (Label, Extra Easy)
+142640: Difficulty 1 Value 2 Data (Label, Very Easy)
+142650: Difficulty 1 Value 3 Data (Label, Easy)
+142660: Difficulty 1 Value 4 Data (Label, Normal)
+142670: Difficulty 1 Value 5 Data (Label, Hard)
+142680: Difficulty 1 Value 6 Data (Label, Very Hard)
+142690: Difficulty 1 Value 7 Data (Label, Extra Hard)
+1426A0: Difficulty 1 Value 8 Data (Label, Hardest
+1426C0: Difficulty 2 Menu Data (System Data)
+1426D0: Difficulty 2 Menu Data (Label)
+1426E0: Difficulty 2 Value 1 Data (Label, Easy)
+1426F0: Difficulty 2 Value 2 Data (Label, Normal)
+142700: Difficulty 2 Value 3 Data (Label, Hard)
+142710: Difficulty 2 Value 4 Data (Label, Hardest)
+142730: Player Lives Menu Data (System Data)
+142740: Player Lives Menu Data (Label)
+142750: Player Lives Value 1 Data (Label, 1)
+142760: Player Lives Value 2 Data (Label, 2)
+142770: Player Lives Value 3 Data (Label, 3)
+142780: Player Lives Value 4 Data (Label, 4)
+142790: Player Lives Value 5 Data (Label, 5)
+1427A0: Player Lives Value 6 Data (Label, 6)
+1427B0: Player Lives Value 7 Data (Label, 7)
+1427D0: Force Settings Data (System Data)
+1427E0: Force Config Menu Data (Label)
+1427F0: Force Config Value 2 Data (Label, No)
+142800: Force Config Value 1 Data (Label, Yes)
+
+------------------------------------------------------------------------
+Callers
+------------------------------------------------------------------------
+
+00103C: Calls 141400
+005028: Calls 141200
+005068: Calls 141200
+0050A8: Calls 141240
+0050B6: Calls 141180
+0050C8: Calls 1411B0
+0050FC: Calls 141280
+00510A: Calls 141150
+00516A: Calls 141220
+0051AA: Calls 141220
+0066FE: Calls 140EB0
+00676A: Calls 140F00
+00678C: Calls 140170
+006A58: Calls 140E80
+006AC0: Calls 140100
+00DA8C: Calls 140E00
+00FB4E: Calls 1401C0
+00FD24: Calls 140140
+01AE46: Calls 141040
+01BE02: Calls 140190
+01F3FE: Calls 140300
+02227C: Calls 140B50
+02228E: Calls 140B70
+026D56: Calls 140B50
+026D68: Calls 140B70
+043D98: Calls 140A80
+043ECC: Calls 140A40
+048512: Calls 140A80
+048620: Calls 140A00
+049316: Calls 140B90
+04DC62: Calls 140B90
+05584E: Calls 140A80
+055982: Calls 140A40
+07E3F4: Calls 140B20
+07E432: Calls 140AC0
+07F456: Calls 141300
+07F4CC: Calls 141300
+07F6BE: Calls 141300
+07F6F8: Calls 140B90
+083868: Calls 141360
+098102: Calls 1401E0
+098CE4: Calls 140900
+09A380: Calls 140930
+0A9E5C: Calls 141000
+0AC994: Calls 142550
+0AC9B2: Calls 142500
+
+------------------------------------------------------------------------
+Other Changes
+------------------------------------------------------------------------
+
+Character Select and Play Mode Changes
+
+001058: Ignore Play Mode Settings From Dipswitch
+001A72: Remove Coin Decrease (Before Select Screen)
+001ABC: Remove Coin Decrease (Before Select Screen)
+006300: Remove Select Character Timer Start (Mid Game)
+00677A: Remove Coin Decrease (Mid Game)
+006838: Remove Auto Continue After Losing All Lives (Mid Game)
+006856: Remove Auto Continue After Losing All Lives (Mid Game)
+006972: Remove Coin Decrease (Mid Game)
+006978: Remove Lives Increase (Mid Game)
+0069EA: Remove Select Character Timer Decrease (Mid Game)
+006A70: Remove Select Character Timer Start and Clean HUD (Mid Game)
+006A84: Remove Character Select Lifebar (Mid Game)
+006A9C: Remove Coin Decrease (Mid Game)
+006AA2: Remove Lives Increase (Mid Game)
+006ABC: Remove Character Select Lives Label (Mid Game)
+006AF6: Remove Character Select Push Start Label (Mid Game)
+006B46: Remove Character Select Push Start Label (Mid Game)
+006CBE: Timer Label Converted to Color Label (Mid Game)
+00FB88: Start Game Timer Increase (Select Screen)
+00FD0E: Remove Coin Decrease (Select Screen)
+00FD40: Remove the Timer Label Drawing Value 0 (Select Screen)
+00FD44: Remove Lifebar (Select Screen)
+00FD48: Remove HUD Character Image(Select Screen)
+00FD54: Remove HUD Lives Label (Select Screen)
+00FE22: Character Select (Select Screen)
+00FE48: Remove HUD Character Image (Select Screen)
+00FE5C: Remove Coin Decrease (Select Screen)
+00FE62: Remove Lives Increase (Select Screen)
+00FE74: Remove HUD Lives Label (Select Screen)
+00FEBE: Remove Push Start Label (Select Screen)
+010030: Remove HUD Character Image(Select Screen)
+010034: Remove Lifebar (Select Screen)
+010040: Remove HUD Lives Label (Select Screen)
+01B2D2: Image Brightness Fix (Select Screen)
+01B32C: Image Brightness Fix (Select Screen)
+
+
+Lifebar Progress
+
+003F02: Lifebar Progress
+
+
+Boss Improvements
+
+051452: Doppel Mack the Knife Replica Flag Increase
+0514A8: Doppel Captain Commando Replica Flag Increase
+051500: Doppel Ninja Commando Replica Flag Increase
+051558: Doppel Baby Head Replica Flag Increase
+05166C: Doppel Mack the Knife Replica Flag Increase
+0516C2: Doppel Captain Commando Replica Flag Increase
+051718: Doppel Ninja Commando Replica Flag Increase
+05176E: Doppel Baby Head Replica Flag Increase
+0826F2: Druk and Shtrom Boss Amount Decrease (Throw Death)
+082998: Druk and Shtrom Boss Amount Decrease (Default Death)
+083872: Druk and Shtrom Force End Stage (Current Enemy)
+
+
+Captain Discharge
+
+0B64BA: Captain Discharge Punch Enemy Behavior Change to Knockdown
+
+
+?
+
+00FD98: Unknown, I forgot what it does.
+
+------------------------------------------------------------------------
+Data Changes
+------------------------------------------------------------------------
+
+Shadow Pallete Changes
+
+004D8A: Shadow Pallete Change (00 to 16)
+004D9A: Shadow Pallete Change (00 to 16 / value 20 to 36)
+004DD0: Shadow Pallete Change (00 to 16)
+004DE0: Shadow Pallete Change (00 to 16)
+004DF0: Shadow Pallete Change (00 to 16 / value 20 to 36)
+004E26: Shadow Pallete Change (00 to 16)
+004E36: Shadow Pallete Change (00 to 16 / value 20 to 36)
+004E6C: Shadow Pallete Change (00 to 16)
+004E7C: Shadow Pallete Change (00 to 16)
+004E8C: Shadow Pallete Change (00 to 16)
+004E9C: Shadow Pallete Change (00 to 16 / value 20 to 36)
+004ED2: Shadow Pallete Change (00 to 16)
+004EE2: Shadow Pallete Change (00 to 16)
+004EF2: Shadow Pallete Change (00 to 16)
+004F02: Shadow Pallete Change (00 to 16)
+004F12: Shadow Pallete Change (00 to 16 / value 20 to 36)
+004F52: Shadow Pallete Change (3 to 16)
+
+
+Select Screen Yellow Blink
+
+00F9CA: Remove Mack the Knife Image Yellow Blink (Select Screen)
+00F9EC: Remove Captain Commando Image Yellow Blink (Select Screen)
+00FA0E: Remove Ninja Commando Image Yellow Blink (Select Screen)
+00FA40: Remove Baby Head Image Yellow Blink (Select Screen)
+
+
+Objects Pallete Changes
+
+020130: Rocket Launcher Missile Pallete Change (00 to 0C / value 80 to 8C)
+020148: Rocket Launcher Missile Pallete Change (00 to 0C / value 80 to 8C)
+
+085940: Mardia Vomit Pallete Fix 1 (Redrawn with 6/7, Original is 03)
+085956: Mardia Vomit Pallete Fix 2 (Redrawn with 6/7, Original is 03)
+085974: Mardia Vomit Pallete Fix 3 (Redrawn with 6/7, Original is 03)
+085994: Mardia Vomit Pallete Fix 4 (Redrawn with 6/7, Original is 03)
+0859B2: Mardia Vomit Pallete Fix 5 (Redrawn with 6/7, Original is 03)
+0859D0: Mardia Vomit Pallete Fix 6 (Redrawn with 6/7, Original is 03)
+0859EE: Mardia Vomit Pallete Fix 7 (Redrawn with 6/7, Original is 03)
+085A10: Mardia Vomit Pallete Fix 8 (Redrawn with 6/7, Original is 03)
+085A2E: Mardia Vomit Pallete Fix 9 (Redrawn with 6/7, Original is 03)
+085A54: Mardia Vomit Pallete Fix 10 (Redrawn with 6/7, Original is 03)
+085A7C: Mardia Vomit Pallete Fix 11 (Redrawn with 6/7, Original is 03)
+085AA6: Mardia Vomit Pallete Fix 12 (Redrawn with 6/7, Original is 03)
+085AD4: Mardia Vomit Pallete Fix 13 (Redrawn with 6/7, Original is 03)
+085AEE: Mardia Vomit Pallete Fix 14 (Redrawn with 6/7, Original is 03)
+085B04: Mardia Vomit Pallete Fix 15 (Redrawn with 6/7, Original is 03)
+085B1A: Mardia Vomit Pallete Fix 16 (Redrawn with 6/7, Original is 03)
+085B3E: Mardia Vomit Pallete Fix 17 (Redrawn with 6/7, Original is 03)
+
+086CDC: 5th Boss Robot Head Bomb Pallete Fix 1 (Redrawn with 19, Original is 03)
+086CF6: 5th Boss Robot Head Bomb Pallete Fix 2 (Redrawn with 19, Original is 03)
+086D10: 5th Boss Robot Head Bomb Pallete Fix 3 (Redrawn with 19, Original is 03)
+086D2A: 5th Boss Robot Head Bomb Pallete Fix 4 (Redrawn with 19, Original is 03)
+
+095BC4: Mack the Knife Smoke Pallete Fix 1 (02 to 0D)
+095BDA: Mack the Knife Smoke Pallete Fix 2 (02 to 0D)
+095BF0: Mack the Knife Smoke Pallete Fix 3 (02 to 0D)
+095C0A: Mack the Knife Smoke Pallete Fix 4 (02 to 0D)
+095C24: Mack the Knife Smoke Pallete Fix 5 (02 to 0D)
+095C3E: Mack the Knife Smoke Pallete Fix 6 (02 to 0D)
+095C58: Mack the Knife Smoke Pallete Fix 7 (02 to 0D)
+095C72: Mack the Knife Smoke Pallete Fix 8 (02 to 0D)
+095C8C: Mack the Knife Smoke Pallete Fix 9 (02 to 0D)
+095CA6: Mack the Knife Smoke Pallete Fix 10 (02 to 0D)
+095CBC: Mack the Knife Smoke Pallete Fix 11 (02 to 0D)
+095CD2: Mack the Knife Smoke Pallete Fix 12 (02 to 0D)
+
+096642: Sandwich Pallete Fix (Redrawn with 14, Original is 03)
+
+096676: Coffee Pallete Fix (Redrawn with 0C, Original is 01)
+
+096690: Lemon Pallete Fix 1 (Redrawn with 17, Original is 02)
+0966A4: Lemon Pallete Fix 2 (Redrawn with 17, Original is 02)
+
+0966BC: Cherry Pallete Fix 1 (Redrawn with 0A, Original is 02)
+0966D0: Cherry Pallete Fix 2 (Redrawn with 0A, Original is 02)
+
+09670E: Former Monalisa Picture Pallete Fix 1 (Redrawn with 0E, Original is 03)
+096732: Former Monalisa Picture Pallete Fix 1 (Redrawn with 0E, Original is 03)
+
+09675A: Former Volcano Picture Pallete Fix (Redrawn with 0F, Original is 00)
+
+096832: Coin Pallete Fix 1 (Redrawn with 06, Original is 02)
+096846: Coin Pallete Fix 2 (Redrawn with 06, Original is 02)
+09685A: Coin Pallete Fix 3 (Redrawn with 06, Original is 02)
+09686E: Coin Pallete Fix 4 (Redrawn with 06, Original is 02)
+096886: Coin Pallete Fix 5 (Redrawn with 06, Original is 02)
+09689A: Coin Pallete Fix 6 (Redrawn with 06, Original is 02)
+0968AE: Coin Pallete Fix 7 (Redrawn with 06, Original is 02)
+0968C2: Coin Pallete Fix 8 (Redrawn with 06, Original is 02)
+
+0E7ABE: Rocket Launcher Missile Pallete Change 1 (00 to 0C / value 20 to 2C)
+0E7AC4: Rocket Launcher Missile Pallete Change 2 (00 to 0C / value 20 to 2C)
+0E7ACA: Rocket Launcher Missile Pallete Change 3 (00 to 0C / value 20 to 2C)
+
+
+Characters Pallete Changes
+
+024E14: Samson Hit By Shock Action Pallete Fix (Wrestler Gray)
+024EAA: Organo Hit By Shock Action Pallete Fix (Wrestler Red)
+02CF4E: Marbin Hit By Shock Action Pallete Fix
+030D86: Musashi Hit By Shock Action Pallete Fix
+036D32: Z Hit By Shock Action Pallete Fix
+039F48: Brenda Hit By Shock Action Pallete Fix (Blonde Girl)
+03A29C: Carol Hit By Shock Action Pallete Fix (Pink Girl)
+041B94: Monster Hit By Shock Action Pallete Fix
+04655A: Yamato Hit By Shock Action Pallete Fix
+04B7D6: Dolg Hit By Shock Action Pallete Fix
+04FF16: Shtrom and Shtrom Jr. Hit By Shock Action Pallete Fix
+050004: Druk Hit By Shock Action Pallete Fix
+057358: Blood Hit By Shock Action Pallete Fix
+06FE38: Kojiro Hit By Shock Action Pallete Fix (Red Ninja)
+073D66: Hanzo Hit By Shock Action Pallete Fix (Blue Ninja)
+077B32: Sasuke Hit By Shock Action Pallete Fix (Green Ninja)
+
+0BCC56: Characters Being Melted Pallete Fix 1 (01 to 0C)
+0BCC7E: Characters Being Melted Pallete Fix 1 (01 to 0C)
+0BCCA6: Characters Being Melted Pallete Fix 1 (01 to 0C)
+0BCCC6: Characters Being Melted Pallete Fix 1 (01 to 0C)
+
+0CFE4E: Samson Dizzy Star Pallete Fix 1
+0CFE72: Samson Dizzy Star Pallete Fix 2
+0CFEA2: Samson Dizzy Star Pallete Fix 3
+0CFEB4: Samson Dizzy Star Pallete Fix 4
+0CFECC: Samson Dizzy Star Pallete Fix 5
+0CFF08: Samson Dizzy Star Pallete Fix 6
+0E20DE: Samson Dizzy Star Pallete Fix 7
+0E20F0: Samson Dizzy Star Pallete Fix 8
+0E2108: Samson Dizzy Star Pallete Fix 9
+
+0D2C84: Musashi Dizzy Star Pallete Fix 1
+0D2CBA: Musashi Dizzy Star Pallete Fix 2
+0D2D26: Musashi Dizzy Star Pallete Fix 3
+0D2D3E: Musashi Dizzy Star Pallete Fix 4
+0D2D62: Musashi Dizzy Star Pallete Fix 5
+0D2DE0: Musashi Dizzy Star Pallete Fix 6
+0D2E6A: Musashi Dizzy Star Pallete Fix 7
+0D2EA0: Musashi Dizzy Star Pallete Fix 8
+0D2F0C: Musashi Dizzy Star Pallete Fix 9
+0D2F24: Musashi Dizzy Star Pallete Fix 10
+0D2F48: Musashi Dizzy Star Pallete Fix 11
+
+0D4F2E: Brenda Shock Idle Action Pallete Fix
+0D54B2: Brenda Shock Attack 1 Action Pallete Fix
+0D5556: Brenda Shock Attack 2 Action Pallete Fix
+
+0DBFC2: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 1
+0DBFC8: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 2
+0DC03A: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 3
+0DC040: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 4
+0DC046: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 5
+0DC0BE: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 6
+0DC12A: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 7
+0DC0BE: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 8
+0DC130: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 9
+0DC136: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 10
+0DC1AE: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 11
+0DC1B4: Shtrom / Shtrom Jr. Dizzy Star Pallete Fix 12
+
+0E24B8: Blood Dizzy Star Pallete Fix 1
+0E24BE: Blood Dizzy Star Pallete Fix 2
+0E2566: Blood Dizzy Star Pallete Fix 3
+0E256C: Blood Dizzy Star Pallete Fix 4
+0E2572: Blood Dizzy Star Pallete Fix 5
+0E261A: Blood Dizzy Star Pallete Fix 6
+0E26C2: Blood Dizzy Star Pallete Fix 7
+0E26C8: Blood Dizzy Star Pallete Fix 8
+0E26CE: Blood Dizzy Star Pallete Fix 9
+
+0EACC6: Musashi Broken Sword Dizzy Star Pallete Fix 1
+0EACF6: Musashi Broken Sword Dizzy Star Pallete Fix 2
+0EAD3E: Musashi Broken Sword Dizzy Star Pallete Fix 3
+0EAD56: Musashi Broken Sword Dizzy Star Pallete Fix 4
+0EAD74: Musashi Broken Sword Dizzy Star Pallete Fix 5
+0EADD4: Musashi Broken Sword Dizzy Star Pallete Fix 6
+0EAE34: Musashi Broken Sword Dizzy Star Pallete Fix 7
+0EAE52: Musashi Broken Sword Dizzy Star Pallete Fix 8
+0EAE70: Musashi Broken Sword Dizzy Star Pallete Fix 9
+
+0EED48: Organo Dizzy Star Pallete Fix 1
+0EED6C: Organo Dizzy Star Pallete Fix 2
+0EED9C: Organo Dizzy Star Pallete Fix 3
+0EEDAE: Organo Dizzy Star Pallete Fix 4
+0EEDC6: Organo Dizzy Star Pallete Fix 5
+0EEE02: Organo Dizzy Star Pallete Fix 6
+0EEE44: Organo Dizzy Star Pallete Fix 7
+0EEE56: Organo Dizzy Star Pallete Fix 8
+0EEE6E: Organo Dizzy Star Pallete Fix 9
+
+0F01B0: Druk Dizzy Star Pallete Fix 1
+0F01B6: Druk Dizzy Star Pallete Fix 2
+0F0228: Druk Dizzy Star Pallete Fix 3
+0F022E: Druk Dizzy Star Pallete Fix 4
+0F0234: Druk Dizzy Star Pallete Fix 5
+0F02AC: Druk Dizzy Star Pallete Fix 6
+0F0318: Druk Dizzy Star Pallete Fix 7
+0F031E: Druk Dizzy Star Pallete Fix 8
+0F0324: Druk Dizzy Star Pallete Fix 9
+0F039C: Druk Dizzy Star Pallete Fix 10
+0F03A2: Druk Dizzy Star Pallete Fix 11
+
+0EF8F0: Carol Shock Idle Action Pallete Fix
+0EF97A: Carol Shock Attack 1 Action Pallete Fix
+0EF9F2: Carol Shock Attack 2 Action Pallete Fix
+
+
+Pallete Changes
+
+1055F0: Pallete 0C 1 Change (Forced it to be the same as 01)
+1059F0: Pallete 0C 2 Change (Forced it to be the same as 01)
+105DF0: Pallete 0C 3 Change (Forced it to be the same as 01)
+1061F0: Pallete 0C 4 Change (Forced it to be the same as 01)
+1065F0: Pallete 0C 5 Change (Forced it to be the same as 01)
+1069F0: Pallete 0C 6 Change (Forced it to be the same as 01)
+106DF0: Pallete 0C 7 Change (Forced it to be the same as 01)
+1071F0: Pallete 0C 8 Change (Forced it to be the same as 01)
+1075F0: Pallete 0C 9 Change (Forced it to be the same as 01)
+
+105630: Pallete 0E 1 Change (Small Improvement to the colors)
+105A30: Pallete 0E 2 Change (Small Improvement to the colors)
+105E30: Pallete 0E 3 Change (Small Improvement to the colors)
+106230: Pallete 0E 4 Change (Small Improvement to the colors)
+106630: Pallete 0E 5 Change (Small Improvement to the colors)
+106A30: Pallete 0E 6 Change (Small Improvement to the colors)
+106E30: Pallete 0E 7 Change (Small Improvement to the colors)
+107230: Pallete 0E 8 Change (Small Improvement to the colors)
+107630: Pallete 0E 9 Change (Small Improvement to the colors)
+
+1A0000: Mack the Knife Pallete 1 (Original, Pink and Orange)
+1A0020: Mack the Knife Pallete 2 (Gray and Green)
+1A0040: Mack the Knife Pallete 3 (Green and Black)
+1A0060: Mack the Knife Pallete 4 (Purple and Blue)
+
+1A0100: Captain Commando Pallete 1 (Original, Blue and Yellow)
+1A0120: Captain Commando Pallete 2 (Purple and Pink)
+1A0140: Captain Commando Pallete 3 (Gray and Gray)
+1A0160: Captain Commando Pallete 4 (Green and Orange)
+
+1A0200: Ninja Commando Pallete 1 (Gray and Yellow)
+1A0220: Ninja Commando Pallete 2 (Purple and Orange)
+1A0240: Ninja Commando Pallete 3 (Green and Pink)
+1A0260: Ninja Commando Pallete 4 (Blue and White)
+
+1A0300: Baby Head Pallete 1 (Original, Green and Silver)
+1A0320: Baby Head Pallete 2 (Blue and Purple)
+1A0340: Baby Head Pallete 3 (Yellow and Green)
+1A0360: Baby Head Pallete 4 (Gray and Gold)

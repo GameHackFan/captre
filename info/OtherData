@@ -1,0 +1,41 @@
+FF91AA: Continue Screen Memory Region
+
+FF9274: Title Screen Timer (Signed value, max is 8000)
+FF9276: Title Screen Exit Timer (Signed value, max is 8000)
+FF9278: Title Screen Exit Flag
+
+
+
+FFA850.B:   P1 Coin Amount
+FFA851.B:   P2 Coin Amount
+FFA852.B:   P3 Coin Amount
+FFA853.B:   P4 Coin Amount
+
+FFA8CE.B:   Stage ID
+FFF878.W:   Stage Time
+
+FFA8BD.B:		Dip Switch (Lives)
+FFA8BE.B:		Difficulty 1 (0-7)
+FFF82F.B:   Difficulty 2 (0-3)
+
+
+
+
+
+
+FFF82B.B:   Stage Ending Flag
+FFF84B.B:   Boss Dead Flag?
+FFF86B.B:   Boss Dead Flag?
+
+
+
+
+
+
+
+
+
+15CE:		Loop no coin.
+
+1042:   Grabs the difficulty from the dipswitch (2 bytes).
+42E6:   Limits the difficulty to 7 (3 bytes).

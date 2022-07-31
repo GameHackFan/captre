@@ -1,0 +1,10 @@
+900000: Prints sprites in the screen 8x8 sprites? (900510 = C000 000F or C000 0007, player 1 color indicator).
+
+904000: Prints sprites in the screen 16x16 sprites?.
+
+908000: Prints sprites in the screen 32x32 sprites? (Title Screen Character Sprites are at 90B800).
+
+90C000:	Palletes?
+
+
+910000: Sprites

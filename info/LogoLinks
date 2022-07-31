@@ -1,0 +1,60 @@
+https://inkpx.com/templates/gwq/3d-green-gloss-text-effect
+https://www.textstudio.co/logo/glossy-3d-text-239
+https://www5.flamingtext.com/net-fu/dynamic.cgi?script=graffiti-3d-logo&text=CAPTAIN%0D%0A+COMMANDO+&fontname=Archivo+Black&centerColor=%23027&bottomColor=%23027&backgroundRadio=0&imageWidth=872#enterText
+
+
+InkPx
+
+Text
+
+Text:           CAPTAIN COMMANDO READJUSTED
+Font:           Mohave Bold
+Size:           70
+Line Height:    120%
+Letter Spacing: 100%
+Align:          Center
+Split Style:    True
+
+
+Style Fill
+
+Type:           Gradient
+Gradient 1:     25%, #78B0FF
+Gradient 2:     50%, #FFFFFF
+Gradient 3:     60%, #D8A820
+Gradient 4:     85%, #FFFFFF
+
+
+Style Inner Glow
+
+Color:          #FFFFFF
+Opacity:        100%
+Spread:         15%
+Strength:       200%
+
+
+Style 3D #1
+
+Type:           Gradient
+Gradient 1:     0%, #1020D0
+Gradient 2:     100%, #001098
+
+
+
+
+
+
+
+
+
+
+
+Fonts
+
+Mohave Bold
+Teko
+Roboto Condensed
+Libre Franklin
+
+
+

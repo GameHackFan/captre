@@ -1,0 +1,12 @@
+FFA8A6.B:			All Players Start KeyDown
+FFA8A7.B:			All Players Start Hold / Release
+
+FFA8A8.B:			P1 Input KeyDown
+FFA8A9.W:			P2 Input KeyDown
+FFA8AA.W:			P3 Input KeyDown
+FFA8AB.W:			P4 Input KeyDown
+
+FFA8AC.B:			P1 Input Hold / Release
+FFA8AD.W:			P2 Input Hold / Release
+FFA8AE.W:			P3 Input Hold / Release
+FFA8AF.W:			P4 Input Hold / Release

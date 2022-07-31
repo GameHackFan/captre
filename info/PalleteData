@@ -1,0 +1,89 @@
+00:		Captain Commando
+01:		Ginzu
+02:		Mack the Knife
+03:		Baby
+04:		Eddy (Yellow Hood, Purple) ?
+05:		
+06:		
+07:		
+08:		Wooky (Yellow Hood, Green) ?
+09:		
+0A:		Dick (Yellow Hood, Blue, Weapon) ?
+0B:		
+0C:		
+0D:		
+0E:		
+0F:		
+10:		
+11:		Kniver Red Green
+12:		
+13:		
+14:		
+15:		Kniver Yellow Blue
+16:		
+17:		
+18:		
+19:		
+1A:		
+1B:		
+1C:		
+1D:		
+1E:		
+1F:		Dolg (Bosses ?)
+
+
+
+
+
+00 (Captain): 09, 08, 0A, 0B
+01 (Ginzu): 0C
+02 (Mack): 1A
+03 (Baby): 5, 4
+
+
+00: GO label, Rocket Launcher Rocket, Blood (not the boss)?
+01: Shock Effect, Enemy Z.
+02: Nothing?
+03: Television, Picture, 
+
+
+
+All Stages Pallete Start Address
+
+105470, 1070192
+105870, 1071216
+105C70, 1072240
+106070, 1073264
+106470, 1074288
+106870, 1075312
+106C70, 1076336
+107070, 1077360
+107470, 1078384
+
+
+
+Pallete 0C
+
+1055F0, 1070576
+1059F0, 1071600
+105DF0, 1072624
+1061F0, 1073648
+1065F0, 1074672
+1069F0, 1075696
+106DF0, 1076720
+1071F0, 1077744
+1075F0, 1078768
+
+
+
+Pallete 0E
+
+105630, 1070640
+105A30, 1071664
+105E30, 1072688
+106230, 1073712
+106630, 1074736
+106A30, 1075760
+106E30, 1076784
+107230, 1077808
+107630, 1078832
