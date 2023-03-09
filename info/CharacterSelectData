@@ -1,17 +1,17 @@
-FFAA30:		P1 Data
-FFAB30:		P2 Data
-FFAC30:		P3 Data
+FFAA30:   P1 Data
+FFAB30:   P2 Data
+FFAC30:   P3 Data
 
-xxxx04:		Current Character.
-
-
+xxxx04:   Current Character.
 
 
 
 
 
-6776:			Adds the amount of lives.
-677A:			Subtracts the amount of coins.
+
+
+6776:     Adds the amount of lives.
+677A:     Subtracts the amount of coins.
 
 
 

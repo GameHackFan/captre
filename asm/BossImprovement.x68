@@ -72,6 +72,16 @@
 
 
 
+; ORG         $7A054                    ; Replaces 7A054 (There is space enough to replace all the code).
+
+                                        ; Block of code that removes doppel twin target select.
+  NOP                                   ; No operation, does nothing.
+  NOP                                   ; No operation, does nothing.
+  NOP                                   ; No operation, does nothing.
+  NOP                                   ; No operation, does nothing.
+
+
+
 ; ORG         $826F2                    ; Replaces 82998 (There is space enough to replace all the code).
 
                                         ; Block of code that decreases the boss amount flag.
@@ -114,10 +124,12 @@
 ; 141300: Doppel Replica Flag Decrease
 ; 141320: Set Custom Boss Amount Value
 ; 141360: Boss Set Force End Stage Flag
+; 
 ; 051452: Doppel Mack the Knife Replica Flag Increase
 ; 0514A8: Doppel Captain Commando Replica Flag Increase
 ; 051500: Doppel Ninja Commando Replica Flag Increase
 ; 051558: Doppel Baby Head Replica Flag Increase
+; 07A054: Doppel Target Select Improvement
 ; 0826F2: Druk and Shtrom Boss Amount Decrease (Throw Death)
 ; 082998: Druk and Shtrom Boss Amount Decrease (Default Death)
 ; 083872: Druk and Shtrom Force End Stage (Current Enemy)

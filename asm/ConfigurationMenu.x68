@@ -60,7 +60,7 @@
 ; to play online and dipswitch is not possible to access.
 ;
 ; 142500: Configuration Menu Manager (Builder and Controller)
-; 142500: Draw Configuration Menu Hint (Test Menu)
+; 142550: Draw Configuration Menu Hint (Test Menu)
 ;
 ; 1425C0: Configuration Menu Data (Title)
 ;         20 20 20 20 20 20 43 20 6E 6F 69 66 75 67

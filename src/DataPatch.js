@@ -911,6 +911,42 @@ const dataPatch =
       "9C", "FA", "CF", "FD", "FF", "FF", "B9", "F0"
     ],
 
+    // Mack the Knife Pallete 5 (Green and Cyan)
+    "1704064":
+    [
+      "11", "F1", "55", "F1", "77", "F3", "AA", "F5",
+      "CC", "F7", "EE", "FA", "36", "F7", "59", "FA",
+      "9C", "FD", "CE", "FE", "50", "F5", "73", "F7",
+      "B8", "FB", "EC", "FE", "FF", "FF", "B9", "F0"
+    ],
+
+    // Mack the Knife Pallete 6 (Blue and Yellow)
+    "1704096":
+    [
+      "11", "F1", "30", "F7", "50", "F9", "80", "FC",
+      "B2", "FE", "E5", "FF", "43", "F5", "76", "F8",
+      "A9", "FB", "DC", "FE", "58", "F2", "8B", "F5",
+      "CE", "F9", "EF", "FC", "FF", "FF", "B9", "F0"
+    ],
+
+    // Mack the Knife Pallete 7 (Cyan and Purple)
+    "1704128":
+    [
+      "11", "F1", "27", "F5", "39", "F7", "6C", "FA",
+      "8E", "FC", "BF", "FE", "34", "F5", "67", "F8",
+      "9A", "FB", "CD", "FE", "77", "F5", "AA", "F8",
+      "DD", "FB", "FF", "FD", "FF", "FF", "B9", "F0"
+    ],
+
+    // Mack the Knife Pallete 8 (Beige and Pink)
+    "1704160":
+    [
+      "11", "F1", "12", "F7", "34", "FA", "67", "FD",
+      "9A", "FF", "CD", "FF", "60", "F6", "A3", "FA",
+      "D6", "FD", "F9", "FF", "53", "F9", "86", "FC",
+      "B9", "FE", "EC", "FF", "FF", "FF", "B9", "F0"
+    ],
+
 
 
     // Captain Commando Pallete 1 (Original, Blue and Yellow)
@@ -949,9 +985,45 @@ const dataPatch =
       "21", "FB", "53", "FE", "95", "FF", "B9", "F0"
     ],
 
+    // Captain Commando Pallete 5 (Pink and Purple)
+    "1704320":
+    [
+      "11", "F1", "5A", "F4", "8D", "F7", "C9", "FF",
+      "01", "F6", "23", "F8", "45", "FA", "67", "FC",
+      "89", "FE", "BB", "FF", "DD", "FF", "FF", "FF",
+      "39", "F5", "6C", "F8", "AF", "FA", "B9", "F0"
+    ],
+
+    // Captain Commando Pallete 6 (Brown and Green)
+    "1704352":
+    [
+      "11", "F1", "72", "F5", "A5", "F8", "C9", "FF",
+      "10", "F3", "20", "F5", "42", "F8", "64", "FA",
+      "86", "FC", "B8", "FE", "DA", "FF", "FE", "FF",
+      "75", "F3", "A8", "F8", "D9", "FD", "B9", "F0"
+    ],
+
+    // Captain Commando Pallete 7 (Orange and Yellow)
+    "1704384":
+    [
+      "11", "F1", "80", "F9", "C2", "FE", "C9", "FF",
+      "00", "F7", "20", "F9", "40", "FB", "73", "FD",
+      "96", "FE", "B9", "FF", "DC", "FF", "FF", "FF",
+      "70", "F6", "B1", "FB", "E4", "FF", "B9", "F0"
+    ],
+
+    // Captain Commando Pallete 8 (Green and Red)
+    "1704416":
+    [
+      "11", "F1", "00", "FA", "32", "FE", "C9", "FF",
+      "20", "F2", "40", "F4", "61", "F6", "83", "F8",
+      "A5", "FA", "C7", "FD", "EB", "FF", "FF", "FF",
+      "03", "FA", "35", "FD", "77", "FF", "B9", "F0"
+    ],
 
 
-    // Ninja Commando Pallete 1 (Gray and Yellow)
+
+    // Ninja Commando Pallete 1 (Original, Gray and Yellow)
     "1704448":
     [
       "FF", "FF", "EF", "FD", "CE", "FB", "AC", "F9",
@@ -985,6 +1057,42 @@ const dataPatch =
       "AE", "F4", "7B", "F2", "48", "F0", "24", "F0",
       "DD", "FE", "BB", "FD", "99", "FC", "CA", "FF",
       "A8", "FE", "76", "FB", "55", "F8", "90", "F9"
+    ],
+
+    // Ninja Commando Pallete 5 (Gray and Green)
+    "1704576":
+    [
+      "FF", "FF", "ED", "FF", "CB", "FD", "A9", "FB",
+      "87", "F9", "65", "F7", "32", "F4", "10", "F2",
+      "F9", "FE", "C7", "FB", "95", "F9", "C7", "FE",
+      "95", "FB", "63", "F8", "42", "F6", "90", "F9"
+    ],
+
+    // Ninja Commando Pallete 6 (Pink and Yellow)
+    "1704608":
+    [
+      "FF", "FF", "DE", "FF", "BC", "FF", "8A", "FE",
+      "68", "FD", "35", "FB", "13", "F9", "01", "F6",
+      "D5", "FF", "A2", "FF", "70", "FE", "C9", "FF",
+      "96", "FF", "53", "FC", "32", "F9", "90", "F9"
+    ],
+
+    // Ninja Commando Pallete 7 (Green and Salmon)
+    "1704640":
+    [
+      "FF", "FF", "FC", "FF", "EA", "FE", "C8", "FC",
+      "A5", "FA", "83", "F8", "50", "F5", "20", "F2",
+      "C9", "FF", "96", "FF", "74", "FF", "CA", "FF",
+      "97", "FE", "53", "FB", "32", "F8", "90", "F9"
+    ],
+
+    // Ninja Commando Pallete 8 (Brown and Purple)
+    "1704672":
+    [
+      "FF", "FF", "ED", "FF", "CB", "FF", "A8", "FE",
+      "86", "FD", "64", "FB", "42", "F9", "20", "F6",
+      "DF", "FF", "AC", "FD", "89", "FB", "CB", "FE",
+      "98", "FC", "66", "F9", "44", "F7", "90", "F9"
     ],
 
 
@@ -1023,6 +1131,42 @@ const dataPatch =
       "30", "F6", "C9", "FD", "A8", "FB", "87", "F9",
       "65", "F7", "43", "F5", "C3", "FF", "A1", "FE",
       "70", "FD", "40", "FB", "10", "F2", "90", "F9"
+    ],
+
+    // Baby Head Pallete 5 (Green and Copper)
+    "1704832":
+    [
+      "DA", "FF", "A6", "FD", "73", "FB", "41", "F8",
+      "20", "F6", "C6", "FC", "93", "F9", "70", "F7",
+      "50", "F5", "30", "F3", "A9", "FF", "76", "FD",
+      "43", "FB", "21", "F9", "00", "F2", "90", "F9"
+    ],
+
+    // Baby Head Pallete 6 (Purple and Green)
+    "1704864":
+    [
+      "FF", "FF", "DA", "FF", "A6", "FE", "74", "FC",
+      "43", "F9", "CF", "FE", "8E", "FB", "5C", "F9",
+      "39", "F6", "06", "F3", "EC", "FB", "B9", "F7",
+      "86", "F4", "53", "F1", "11", "F0", "90", "F9"
+    ],
+
+    // Baby Head Pallete 7 (Pink and Brown)
+    "1704896":
+    [
+      "FF", "FF", "DB", "FF", "A7", "FE", "75", "FC",
+      "43", "F9", "DD", "FF", "AB", "FF", "78", "FD",
+      "45", "FA", "12", "F7", "CB", "FE", "98", "FC",
+      "54", "F8", "22", "F5", "11", "F1", "90", "F9"
+    ],
+
+    // Baby Head Pallete 8 (Grey and Blue)
+    "1704928":
+    [
+      "FF", "FF", "DA", "FF", "A6", "FE", "74", "FC",
+      "43", "F9", "DE", "FC", "AB", "F9", "78", "F6",
+      "45", "F3", "23", "F1", "DF", "FC", "AE", "F9",
+      "7B", "F6", "48", "F3", "11", "F1", "90", "F9"
     ]
   }
 }

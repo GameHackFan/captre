@@ -16,17 +16,18 @@
   TST.B       D0                        ; Compare 0 and D0.
   BNE         $14052E                   ; If it is not 0, button is being hold, go to the last block of code.
 
-                                        ; Block of code that changes the character ID.
+                                        ; Block of code that changes the color ID.
   MOVE.B      (A4), D0                  ; Stores (A4) inside D0, player input.
   LSR.B       #2, D0                    ; Shifts right D0 bits by 2, 8 is 2, 4 is 1.
   AND.B       #2, D0                    ; D0 and 2, 2 is 2, 1 is 0.
   SUBQ.B      #1, D0                    ; Subtracts D0 by 1, 2 is 1, 0 is -1.
   ADD.B       ($3A, A0), D0             ; Adds ($3A + D0) to D0, the player color.
-  AND.B       #3, D0                    ; D0 and 3, 3 is Baby's ID, last character.
+  AND.B       #7, D0                    ; D0 and 7, 7 is the last valid color ID.
   MOVE.B      D0, ($3A, A0)             ; Stores D0 inside ($3A + A0), the new color ID.
   MOVE.B      #1, D0                    ; Stores 1 inside D0, a change happened.
   RTS                                   ; Returns back to the routine that called this code.
 
+                                        ; Block of code that doesn't change the color ID.
   MOVE.B      #0, D0                    ; Stores 0 inside D0, changes didn't happen.
   RTS                                   ; Returns back to the routine that called this code.
 

@@ -28,62 +28,76 @@
 ; ORG         $140140
 
                                         ; Block of code that handles character confirmation on select screen.
+  BSR         $141700                   ; Calls the routine that saves some registers values.
+  BSR         $141500                   ; Calls the routine that sets the character randomizer flag.
+  BSR         $141570                   ; Calls the character randomizer routine.
   BSR         $140600                   ; Calls the color confirmation routine.
-  BSR         $140760                   ; Calls the pallete replace routine.
-  BSR         $140D10                   ; Calls the routine that draws starting soon in the screen.
+  BSR         $140700                   ; Calls the pallete replace routine.
+  BSR         $140D00                   ; Calls the routine that draws starting soon in the screen.
+  BSR         $141730                   ; Calls the routine that restore some registers values.
   SUBQ.B      #1, (A6)                  ; Subtracts 1 from A6, reduces 1 coin.
   MOVE.B      #1, (A0)                  ; Code from the original game readjusted.
   RTS                                   ; Returns back to the routine that called this code.
 
 
 
-  JMP         $140170.L                 ; Replace 678C.
+  JMP         $140180.L                 ; Replace 678C.
 
-; ORG         $140170
+; ORG         $140180
 
                                         ; Block of code that handles character confirmation mid game.
+  BSR         $141700                   ; Calls the routine that saves some registers values.
+  BSR         $141500                   ; Calls the routine that sets the character randomizer flag.
+  BSR         $141570                   ; Calls the character randomizer routine.
   BSR         $140600                   ; Calls the color confirmation routine.
-  BSR         $140760                   ; Calls the pallete replace routine.
+  BSR         $140700                   ; Calls the pallete replace routine.
+  BSR         $141730                   ; Calls the routine that restore some registers values.
   SUBQ.B      #1, (A6)                  ; Subtracts 1 from A6, reduces 1 coin.
   MOVE.B      #1, (A0)                  ; Code from the original game readjusted.
   RTS                                   ; Returns back to the routine that called this code.
 
 
 
-  JMP         $140190.L                 ; Replace 1BE02.
+  JMP         $1401B0.L                 ; Replace 1BE02.
   NOP
 
-; ORG         $140190
+; ORG         $1401B0
 
                                         ; Block of code that replaces all players palletes.
-  BSR         $1407A0                   ; Calls the pallete replace routine for all players.
+  BSR         $141700                   ; Calls the routine that saves some registers values.
+  BSR         $140780                   ; Calls the pallete replace routine for all players.
   BSR         $141320                   ; Calls the set boss amount routine.
+  BSR         $141730                   ; Calls the routine that restore some registers values.
   CMP.B       #2, ($28CE, A5)           ; Code from the original game that was replaced to jump to this code.
-  BNE         $1401A2                   ; Code from the original game readjusted.
+  BNE         $1401CE                   ; Code from the original game readjusted.
   JMP         $1BE0A                    ; Jumps back to where it stopped in the original code.
   JMP         $1BE14                    ; Code from the original game readjusted.
   
 
 
-  JMP         $1401C0.L                 ; Replace FB4E.
+  JMP         $1401F0.L                 ; Replace FB4E.
 
-; ORG         $1401C0
+; ORG         $1401F0
 
                                         ; Block of code that draws the hack texts in the select screen.
-  BSR         $140CD0                   ; Calls the routine that draws the hack name and version.
+  BSR         $141700                   ; Calls the routine that saves some registers values.
+  BSR         $140C90                   ; Calls the routine that draws the hack name and version.
+  BSR         $141730                   ; Calls the routine that restore some registers values.
   LEA         $90B808, A1               ; Code from the original game that was replaced to jump to this code.
   JMP         $FB54                     ; Jumps back to where it stopped in the original code.
 
 
 
-  JMP         $1401E0.L                 ; Replace 98102.
+  JMP         $140220.L                 ; Replace 98102.
 
-; ORG         $1401E0
+; ORG         $140220
 
                                         ; Block of code that draws the hack texts in the title screen.
-  BSR         $140C90                   ; Calls the routine that draws the hack name, version and link.
+  BSR         $141700                   ; Calls the routine that saves some registers values.
+  BSR         $140C30                   ; Calls the routine that draws the hack name, version and link.
   BSR         $140550                   ; Calls the routine that cleans the color flags of all players. 
-  BSR         $1407A0                   ; Calls the pallete replace routine for all players.
+  BSR         $140780                   ; Calls the pallete replace routine for all players.
+  BSR         $141730                   ; Calls the routine that restore some registers values.
   JSR         $22DA                     ; Code from the original game that was replaced to jump to this code.
   JMP         $98108                    ; Jumps back to where it stopped in the original code.
 
@@ -115,8 +129,8 @@
 ;
 ; 140100: Player Character Select (Mid Game)
 ; 140140: Character Confirmation (Select Screen)
-; 140170: Character Confirmation (Mid Game)
-; 140190: Pallete Replace (All Players)
-; 1401C0: Draw Hack Texts (Select Screen)
-; 1401E0: Draw Hack Texts and Reset Palletes (Title Screen)
+; 140180: Character Confirmation (Mid Game)
+; 1401B0: Pallete Replace (All Players)
+; 1401F0: Draw Hack Texts (Select Screen)
+; 140220: Draw Hack Texts and Reset Palletes (Title Screen)
 ; 00FE22: Player Character Select (Select Screen)

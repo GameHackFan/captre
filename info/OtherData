@@ -12,11 +12,14 @@ FFA852.B:   P3 Coin Amount
 FFA853.B:   P4 Coin Amount
 
 FFA8CE.B:   Stage ID
+FFA8D0.B:   Area ID
 FFF878.W:   Stage Time
 
-FFA8BD.B:		Dip Switch (Lives)
-FFA8BE.B:		Difficulty 1 (0-7)
+FFA8BD.B:   Dip Switch (Lives)
+FFA8BE.B:   Difficulty 1 (0-7)
 FFF82F.B:   Difficulty 2 (0-3)
+
+FF919A.W:   Stage Frames Passed?
 
 
 
@@ -35,7 +38,7 @@ FFF86B.B:   Boss Dead Flag?
 
 
 
-15CE:		Loop no coin.
+15CE:   Loop no coin.
 
 1042:   Grabs the difficulty from the dipswitch (2 bytes).
 42E6:   Limits the difficulty to 7 (3 bytes).

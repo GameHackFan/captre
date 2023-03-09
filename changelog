@@ -1,3 +1,11 @@
+Version 1.1:
+- Fixed a bug in the color conflict code.
+- Doppel now selects his targets like a conventional enemy, ignoring the twin targeting (it was buggy if players had the same character, the new targeting also makes him harder).
+- Improved the way the game interprets the execution of Jump + Punch (you can hold Jump and press Punch).
+- Added a player character randomizer, select pressing the start button and the character will change for every new area.
+- Added 4 new colors for all playable characters, it now has original + 7 colors (8 colors).
+
+
 Version 1.0:
 - Game Settings improvement, see all A changes.
 - Change AA: Added support to allow some game settings to be independent of the dipswitches.
@@ -58,8 +66,4 @@ Version 1.0:
 - A few colors of Pallete E are slightly modified now.
 - Coffee sprite was redrawn just for the sake of being redrawn.
 - Added a text with the hack name, version and link to the title screen and select screen.
-
-
-
-
 

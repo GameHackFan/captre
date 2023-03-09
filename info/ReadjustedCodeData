@@ -6,10 +6,10 @@ Feature Manager
 
 140100: Player Character Select (Mid Game)
 140140: Character Confirmation (Select Screen)
-140170: Character Confirmation (Mid Game)
-140190: Pallete Replace (All Players)
-1401C0: Draw Hack Texts (Select Screen)
-1401E0: Draw Hack Texts and Reset Palletes (Title Screen)
+140180: Character Confirmation (Mid Game)
+1401B0: Pallete Replace (All Players)
+1401F0: Draw Hack Texts (Select Screen)
+140220: Draw Hack Texts and Reset Palletes (Title Screen)
 
 
 Captain Discharge
@@ -32,15 +32,14 @@ Color Select
 Color Confirmation
 
 140600: Handle Color Confirmation (Current Player)
-140650: Update The Color Conflict Flag (Current Player)
+140640: Update The Color Conflict Flag (Current Player)
 140680: Color Conflict Fix (Current Player)
 
 
 Pallete Replace
 
-140700: Replace Pallete
-140760: Replace Pallete (Current Player)
-1407A0: Replace Pallete (All Players)
+140700: Replace Pallete (Current Player)
+140780: Replace Pallete (All Players)
 
 
 Player Effect Fix
@@ -65,11 +64,9 @@ Ice Fix
 Extra Text
 
 140C00: Prints Sprites in Line
-140C30: Saves Values in Memory
-140C60: Restore Values Saved in Memory
-140C90: Print Hack Name and Link Text (Title Screen)
-140CD0: Print Hack Name and Link Text (Select Screen)
-140D10: Print Starting Soon Text (Select Screen)
+140C30: Print Hack Name and Link Text (Title Screen)
+140C90: Print Hack Name and Link Text (Select Screen)
+140D00: Print Starting Soon Text (Select Screen)
 140D40: Hack Name Text
 140D70: Hack Link Text
 140DA0: Starting Soon Text
@@ -113,6 +110,23 @@ Boss Improvement
 Configuration Loader
 
 141400: Try to Load Custom Settings
+
+
+Player Character Randomizer
+
+141500: Sets the Randomizer Flag.
+141530: Randomizes a Number in D1, D6.
+141570: Randomizes a Character and Color (Current Player).
+1415C0: Randomizes a Character and Color (All Players).
+141610: Fixes Shuriken Bug (Current Player)
+141640: Randomizes a Character and Color (All Players Stage Start).
+141670: Randomizes a Character and Color (All Players Stage Area Change).
+
+
+Game Utils
+
+141700: Saves D0, D1, D6, A0, A1, A6 in RAM at FFFFE0.
+141730: Restores D0, D1, D6, A0, A1, A6 from RAM at FFFFE0.
 
 
 Menu Builder 
@@ -176,6 +190,7 @@ Configuration Menu
 1427F0: Force Config Value 2 Data (Label, No)
 142800: Force Config Value 1 Data (Label, Yes)
 
+
 ------------------------------------------------------------------------
 Callers
 ------------------------------------------------------------------------
@@ -192,14 +207,14 @@ Callers
 0051AA: Calls 141220
 0066FE: Calls 140EB0
 00676A: Calls 140F00
-00678C: Calls 140170
+00678C: Calls 140180
 006A58: Calls 140E80
 006AC0: Calls 140100
 00DA8C: Calls 140E00
-00FB4E: Calls 1401C0
+00FB4E: Calls 1401F0
 00FD24: Calls 140140
 01AE46: Calls 141040
-01BE02: Calls 140190
+01BE02: Calls 1401B0
 01F3FE: Calls 140300
 02227C: Calls 140B50
 02228E: Calls 140B70
@@ -220,10 +235,12 @@ Callers
 07F6BE: Calls 141300
 07F6F8: Calls 140B90
 083868: Calls 141360
-098102: Calls 1401E0
+098102: Calls 140220
 098CE4: Calls 140900
 09A380: Calls 140930
+0A97CE: Calls 141640
 0A9E5C: Calls 141000
+0AA81C: Calls 141670
 0AC994: Calls 142550
 0AC9B2: Calls 142500
 
@@ -231,7 +248,7 @@ Callers
 Other Changes
 ------------------------------------------------------------------------
 
-Character Select and Play Mode Changes
+Character Select, Play Mode and Other Changes.
 
 001058: Ignore Play Mode Settings From Dipswitch
 001A72: Remove Coin Decrease (Before Select Screen)
@@ -266,6 +283,7 @@ Character Select and Play Mode Changes
 010030: Remove HUD Character Image(Select Screen)
 010034: Remove Lifebar (Select Screen)
 010040: Remove HUD Lives Label (Select Screen)
+011464: Player Jump + Punch Interpretation Improvement
 01B2D2: Image Brightness Fix (Select Screen)
 01B32C: Image Brightness Fix (Select Screen)
 
@@ -285,6 +303,7 @@ Boss Improvements
 0516C2: Doppel Captain Commando Replica Flag Increase
 051718: Doppel Ninja Commando Replica Flag Increase
 05176E: Doppel Baby Head Replica Flag Increase
+07A054: Doppel Select Target Improvement
 0826F2: Druk and Shtrom Boss Amount Decrease (Throw Death)
 082998: Druk and Shtrom Boss Amount Decrease (Default Death)
 083872: Druk and Shtrom Force End Stage (Current Enemy)

@@ -4,7 +4,7 @@
 
 908000: Prints sprites in the screen 32x32 sprites? (Title Screen Character Sprites are at 90B800).
 
-90C000:	Palletes?
+90C000: Palletes?
 
 
 910000: Sprites

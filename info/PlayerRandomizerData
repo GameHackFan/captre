@@ -1,0 +1,50 @@
+A97D0:    Clears area ID.
+AA81C:    Increases area ID.
+
+
+
+
+
+
+
+Seed:  16807, 17419, 18749, 22091, 26573, 28559, 30727, 61673, 65539
+
+
+let a = [0, 0, 0, 0];
+let b = [0, 0, 0, 0];
+let c = [0, 0, 0, 0];
+let d = [0, 0, 0, 0];
+let e = [0, 0, 0, 0, 0, 0, 0, 0];
+let f = [0, 0, 0, 0, 0, 0, 0, 0];
+let g = [0, 0, 0, 0, 0, 0, 0, 0];
+let h = [0, 0, 0, 0, 0, 0, 0, 0];
+let max = 65536;
+let shift = 6;
+let it = parseInt("7700", 16);
+let last = parseInt("7800", 16);
+
+for(let i = it; i < last; i++)
+{
+  let ar = ((17419 * i) >> shift) % max;
+  let br = ((22091 * i) >> shift) % max;
+  let cr = ((26573 * i) >> shift) % max;
+  let dr = ((30727 * i) >> shift) % max;
+  let er = ((17419 * ar) >> shift) % max;
+  let fr = ((22091 * br) >> shift) % max;
+  let gr = ((26573 * cr) >> shift) % max;
+  let hr = ((30727 * dr) >> shift) % max;
+
+  a[ar % a.length]++;
+  b[br % b.length]++;
+  c[cr % c.length]++;
+  d[dr % d.length]++;
+  
+  e[er % e.length]++;
+  f[fr % f.length]++;
+  g[gr % g.length]++;
+  h[hr % h.length]++;
+}
+
+let s = a + "\n" + b + "\n" + c + "\n" + d + "\n\n\n";
+s += e + "\n" + f + "\n" + g + "\n" + h;
+alert(s);
