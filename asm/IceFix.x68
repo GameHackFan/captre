@@ -139,10 +139,24 @@
 
                                         ; Block of code that fixes death by ice bugs.
   CMP.B       #$18, D1                  ; Compares 18 and D1, 18 is hit by ice.
-  BNE         $140B90                   ; If it is not 18, ignore the 2 lines below.
+  BNE         $140B9E                   ; If it is not 18, ignore the 2 lines below.
   MOVE.W      #$2, ($4, A0)             ; Stores 2 inside ($4 + A0), death rolling on the ground.
   RTS                                   ; Returns back to the routine that called this code.
   MOVE.W      (A1, D1.W), ($4, A0)      ; Code from the original game that was replaced to jump to this code.
+  RTS                                   ; Returns back to the routine that called this code.
+
+
+
+  JSR         $140BC0.L                 ; Replace 22398, 26E72.
+  NOP
+
+; ORG         $140BC0
+
+                                        ; Block of code that fixes enemies hit by ice mid air.
+  CMP.W       #$18, ($6, A0)            ; Compares 18 and ($6 + A0), 18 is hit by ice.
+  BEQ         $140BCC                   ; If it is 18, ignore the line below.
+  ADDQ.W      #$2, ($8, A0)             ; Code from the original game that was replaced.
+  MOVE.W      D0, ($E, A0)              ; Code from the original game that was replaced.
   RTS                                   ; Returns back to the routine that called this code.
 
 
@@ -166,3 +180,4 @@
 ; 140B50: Enemies Hit By Ice Action Pallete Fix (Default Sprite)
 ; 140B70: Enemies Hit By Ice Action Pallete Fix (Ice Sprite)
 ; 140B90: Enemies Hit By Ice Action Fix (Death)
+; 140BC0: Enemies Hit By Ice Mid Air Fix (Action Bug)

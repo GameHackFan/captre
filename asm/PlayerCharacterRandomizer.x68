@@ -22,21 +22,6 @@
 
 
 
-; ORG         $141530
-
-                                        ; Block of code that randomizes a number.
-  CLR.L       D1                        ; Clears D1.
-  MOVE.W      A0, D1                    ; Stores A0 inside D1, current player address.
-  SUB.W       #$A994, D1                ; Subtracts A994 from D1, subtracts P1 address.
-  LSR.W       #$8, D1                   ; Shifts right D1 bits by 8, to get the player ID.
-  MOVE.W      ($16, PC, D1.W), D1       ; Stores ($16 + PC + D1.W) inside D1, a prime number.
-  MULU.W      D6, D1                    ; Mutiplies D6 by D1, part of the randomizer calculation.
-  LSR.L       #$6, D1                   ; Shifts right D1 bits by 6, part of the randomizer calculation.
-  MOVE.L      D1, D6                    ; Stores D1 inside D6, the new seed.
-  RTS                                   ; Returns back to the routine that called this code.
-
-
-
 ; ORG         $141570
 
                                         ; Block of code that randomizes a character for the current player.
@@ -45,16 +30,13 @@
   LSR.W       #$8, D0                   ; Shifts right D0 bits by 8, to get the player ID.
   ADD.W       #$7F10, D0                ; Adds 7F10 to D0, the randomizer flag memory region shift.
   TST.B       (A5, D0.W)                ; Compares 0 and (A5 + D0.W), the player randomizer flag.
-  BEQ         $1415A0                   ; If it is 0, go to the RTS line.
-  CLR.W       D6                        ; Clears D6.
-  MOVE.B      ($2810, A5), D6           ; Stores ($2810 + A5) inside D6, some frame based data.
-  ADD.W       #$7700, D6                ; Adds 7700 to D6, to have the final seed.
-  BSR         $141530                   ; Calls the routine that randomizes a number.
-  AND.W       #$3, D1                   ; 3 and D1, there are only 4 playable characters.
-  MOVE.B      D1, ($A0, A0)             ; Stores D1 inside ($A0 + A0), the randomized character ID.
-  BSR         $141530                   ; Calls the routine that randomizes a number.
-  AND.W       #$7, D1                   ; D1 and 7, there are only 8 available colors.
-  MOVE.B      D1, ($3A, A0)             ; Stores D1 inside ($3A + A0), the randomized pallete ID.
+  BEQ         $14159A                   ; If it is 0, go to the RTS line.
+  BSR         $1417B0                   ; Calls the code that randomizes 1 to 16 times a value inside D6.
+  AND.W       #$3, D6                   ; D6 and 3, there are only 4 playable characters.
+  MOVE.B      D6, ($A0, A0)             ; Stores D6 inside ($A0 + A0), the randomized character ID.
+  BSR         $1417B0                   ; Calls the code that randomizes 1 to 16 times a value inside D6.
+  AND.W       #$7, D6                   ; D6 and 7, there are only 8 available colors.
+  MOVE.B      D6, ($3A, A0)             ; Stores D6 inside ($3A + A0), the randomized pallete ID.
   RTS                                   ; Returns back to the routine that called this code.
 
 
@@ -131,7 +113,6 @@
 ; pressing start.
 ;
 ; 141500: Sets the Randomizer Flag.
-; 141530: Randomizes a Number in D1, D6.
 ; 141570: Randomizes a Character and Color (Current Player).
 ; 1415C0: Randomizes a Character and Color (All Players).
 ; 141610: Fixes Shuriken Bug (Current Player)

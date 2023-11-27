@@ -6,12 +6,11 @@ This mod brings some extra features and changes to the original game.
 You can access the patcher [here](https://gamehackfan.github.io/captre/).
 <br/><br/>
 
-Version 1.1:
-- Fixed a bug in the color conflict code.
-- Doppel now selects his targets like a conventional enemy, ignoring the twin targeting (it was buggy if players had the same character, the new targeting also makes him harder).
-- Improved the way the game interprets the execution of Jump + Punch (you can hold Jump and press Punch).
-- Added a player character randomizer, select pressing the start button and the character will change for every new area.
-- Added 4 new colors for all playable characters, it now has original + 7 colors (8 colors).
+Version 1.2:
+- Fixed a bug where Skip / Sonie getting hit by ice mid air was crashing the game.
+- Fixed a bug where Samson / Organo getting hit by ice mid air was bugging their animation which could softlock the game.
+- Changed the amount of damage the player takes when inside a Robot to just 2 points.
+- Improved the way the player character and color is randomized.
 
 See all changes made [here](https://github.com/GameHackFan/captre/blob/main/changelog).
 <br/><br/>

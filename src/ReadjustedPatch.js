@@ -284,11 +284,19 @@ const readjustedPatch =
     // Ice Cube Action Fix Caller (Wrestler, Ice Sprite)
     "139918": ["F9", "4E", "14", "00", "70", "0B", "71", "4E"],
 
+    // Enemies Hit By Ice Mid Air Fix Caller (Wrestler, Action Bug)
+    "140184": ["B9", "4E", "14", "00", "C0", "0B", "71", "4E"],
+
+
+
     // Ice Cube Action Fix Caller (Kniver, Character Sprite)
     "159062": ["F9", "4E", "14", "00", "50", "0B", "71", "4E"],
 
     // Ice Cube Action Fix Caller (Kniver, Ice Sprite)
     "159080": ["F9", "4E", "14", "00", "70", "0B", "71", "4E"],
+
+    // Enemies Hit By Ice Mid Air Fix Caller (Kniver, Action Bug)
+    "159346": ["B9", "4E", "14", "00", "C0", "0B", "71", "4E"],
 
 
 
@@ -446,6 +454,20 @@ const readjustedPatch =
 
     // Cut In Half Effect Fix Caller (Current Player)
     "631680": ["F9", "4E", "14", "00", "30", "09"],
+
+
+
+    // Reduces the Damage Players Take to 2 When Inside a Robot
+    "635976": ["6E", "55", "3C", "00"],
+
+    // Reduces the Damage Players Take to 2 When Inside a Robot
+    "636052": ["6E", "55", "3C", "00"],
+
+    // Reduces the Damage Players Take to 2 When Inside a Robot
+    "636140": ["6E", "55", "3C", "00"],
+
+    // Reduces the Damage Players Take to 2 When Inside a Robot
+    "636254": ["6E", "55", "3C", "00"],
 
 
 
@@ -763,6 +785,14 @@ const readjustedPatch =
       "00", "10", "04", "00", "75", "4E"
     ],
 
+    // Enemies Hit By Ice Mid Air Fix (Action Bug)
+    "1313728":
+    [
+      "68", "0C", "18", "00", "06", "00", "04", "67",
+      "68", "54", "08", "00", "40", "31", "0E", "00",
+      "75", "4E"
+    ],
+
 
 
     // Prints Sprites in Line
@@ -805,7 +835,7 @@ const readjustedPatch =
     "1314112":
     [
       "65", "52", "64", "61", "75", "6A", "74", "73",
-      "64", "65", "76", "20", "2E", "31", "20", "31",
+      "64", "65", "76", "20", "2E", "31", "20", "32",
       "62", "28", "20", "79", "61", "47", "65", "6D",
       "61", "48", "6B", "63", "61", "46", "29", "6E"
     ],
@@ -1024,26 +1054,15 @@ const readjustedPatch =
       "75", "4E"
     ], 
 
-    // Randomizes a Number in D1 and D6
-    "1316144":
-    [
-      "81", "42", "08", "32", "41", "04", "94", "A9",
-      "49", "E0", "3B", "32", "16", "10", "C6", "C2",
-      "89", "EC", "01", "2C", "75", "4E", "00", "00",
-      "00", "00", "00", "00", "00", "00", "00", "00",
-      "0B", "44", "4B", "56", "CD", "67", "07", "78"
-    ], 
-
     // Randomizes a Character and Color (Current Player)
     "1316208":
     [
       "08", "30", "40", "04", "94", "A9", "48", "E0",
       "40", "06", "10", "7F", "35", "4A", "00", "00",
-      "1E", "67", "46", "42", "2D", "1C", "10", "28",
-      "46", "06", "00", "77", "A2", "61", "7C", "C2",
-      "03", "00", "41", "11", "A0", "00", "98", "61",
-      "7C", "C2", "07", "00", "41", "11", "3A", "00",
-      "75", "4E"
+      "18", "67", "00", "61", "2C", "02", "7C", "CC",
+      "03", "00", "46", "11", "A0", "00", "00", "61",
+      "20", "02", "7C", "CC", "07", "00", "46", "11",
+      "3A", "00", "75", "4E"
     ], 
 
     // Randomizes a Character and Color (All Players).
@@ -1093,8 +1112,6 @@ const readjustedPatch =
       "46", "2B", "E8", "7F", "48", "2B", "EC", "7F",
       "49", "2B", "F0", "7F", "4E", "2B", "F4", "7F",
       "75", "4E"
-      
-
     ],
 
     // Restores D0, D1, D6, A0, A1, A6 from RAM at FFFFE0.
@@ -1104,6 +1121,26 @@ const readjustedPatch =
       "2D", "2C", "E8", "7F", "6D", "20", "EC", "7F",
       "6D", "22", "F0", "7F", "6D", "2C", "F4", "7F",
       "75", "4E"
+    ],
+
+    // Randomizes a value in D6
+    "1316704":
+    [
+      "86", "42", "6D", "4A", "1C", "7F", "06", "67",
+      "2D", "3C", "1E", "7F", "08", "66", "2D", "3C",
+      "10", "28", "6D", "DC", "9A", "11", "46", "06",
+      "15", "FC", "FC", "CC", "AB", "02", "06", "22",
+      "89", "E0", "89", "E0", "86", "B3", "6D", "52",
+      "1C", "7F", "BC", "CC", "00", "00", "FF", "FF",
+      "46", "3B", "1E", "7F", "75", "4E"
+    ],
+
+    // Randomizes a value in D6 (1 to 16 Iterations)
+    "1316784":
+    [
+      "2D", "30", "10", "28", "6D", "D0", "9A", "11",
+      "7C", "C0", "0F", "00", "A2", "61", "C8", "51",
+      "FC", "FF", "75", "4E"
     ],
 
 

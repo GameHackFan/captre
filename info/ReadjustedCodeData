@@ -59,6 +59,7 @@ Ice Fix
 140B50: Enemies Hit By Ice Action Pallete Fix (Ice Sprite)
 140B70: Enemies Hit By Ice Action Fix (Death)
 140B90: Enemy Death By Ice Fix
+140BC0: Enemies Hit By Ice Mid Air Fix (Action Bug)
 
 
 Extra Text
@@ -115,7 +116,6 @@ Configuration Loader
 Player Character Randomizer
 
 141500: Sets the Randomizer Flag.
-141530: Randomizes a Number in D1, D6.
 141570: Randomizes a Character and Color (Current Player).
 1415C0: Randomizes a Character and Color (All Players).
 141610: Fixes Shuriken Bug (Current Player)
@@ -127,6 +127,8 @@ Game Utils
 
 141700: Saves D0, D1, D6, A0, A1, A6 in RAM at FFFFE0.
 141730: Restores D0, D1, D6, A0, A1, A6 from RAM at FFFFE0.
+141760: Randomizes a Value In D6
+1417B0: Randomizes a Value In D6 (1 to 16 Iterations)
 
 
 Menu Builder 
@@ -218,8 +220,10 @@ Callers
 01F3FE: Calls 140300
 02227C: Calls 140B50
 02228E: Calls 140B70
+022398: Calls 140BC0
 026D56: Calls 140B50
 026D68: Calls 140B70
+026E72: Calls 140BC0
 043D98: Calls 140A80
 043ECC: Calls 140A40
 048512: Calls 140A80
